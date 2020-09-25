@@ -102,6 +102,9 @@ footer {
     background: #333;
     color: #fff;
 }
+footer a {
+    color: cornsilk;
+}
 
 /*End footer*/
 
