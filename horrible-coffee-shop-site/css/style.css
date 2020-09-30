@@ -1,4 +1,5 @@
-/*General setting*/
+/*General Settings */
+
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -11,13 +12,12 @@ body {
     color: #000;
 }
 
-main {
+main { 
     display: block;
+    padding: 30px 0;
 }
 
-* {
-    outline: none !important;
-}
+* { outline: none !important; }
 
 a:hover {
     text-decoration: none;
@@ -28,9 +28,7 @@ h1, h2, h3, h4, h5, h6, p, a, input, div, textarea, label {
     margin: 0;
 }
 
-h2 {
-    font-size: 28px;
-}
+h2 { font-size: 28px; }
 
 ul {
     list-style: none;
@@ -40,13 +38,9 @@ ul {
     margin: 0;
 }
 
-p {
-    font-size: 1em;
-}
+p { font-size: 1em; }
 
-img {
-    border-style: none;
-}
+img { border-style: none; }
 
 .container {
     width: 1200px;
@@ -62,15 +56,13 @@ img {
     display: table;
 }
 
-main {
-    padding: 30px 0;
-}
+/* End General Settings */
 
-/*End General setting*/
+/* Header */
 
-/*Header*/
-header {
-    background: #363F48;
+header { 
+    background: #363F48; 
+    padding: 10px;
 }
 
 .title-header .title {
@@ -87,28 +79,31 @@ header {
     vertical-align: middle;
 }
 
-nav {
-    background: #262d33;
-}
+nav { background: #262d33; }
 
-nav li a {
+nav li a { 
     color: #AFB2B6;
+    display: inline-block;
+    padding: 10px 10px;
 }
 
-/*End Header*/
+/* End Header */
 
-/*Footer*/
+/* Footer */
+
 footer {
     background: #333;
     color: #fff;
-}
-footer a {
-    color: cornsilk;
+    padding: 10px;  
+    height: 100px;
 }
 
-/*End footer*/
+footer a { color: cornsilk; }
 
-/*Home Page content*/
+/* End Footer */
+
+/* Home Page Content */
+
 .menu-item.additional-items h2 {
     width: 50%;
     float: left;
@@ -120,14 +115,13 @@ footer a {
     float: left;
 }
 
-/*End Home Page content*/
+/* End Home Page Content */
 
-/*Page content*/
+/* Page Content */
 
 .event-item {
     margin-bottom: 25px;
     border: 1px solid #000
 }
 
-/*End Page content*/
-
+/* End Page Content */
