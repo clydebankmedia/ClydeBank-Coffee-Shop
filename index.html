@@ -1,19 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>ClydeBank Coffee Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 <header>
     <div class="container">
         <div class="title-header">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Logo">
-                    <img src="images/coffee-cup-icon.png" alt="Logo">
+                <a href="#menu">
+                    <i class="fas fa-mug-hot fa-2x"></i>
+                    <i class="fas fa-coffee fa-2x"></i>
                 </a>
             </div>
             <div class="title">ClydeBank Coffee Shop</div>
@@ -23,48 +25,110 @@
 <nav>
     <div class="container">
         <ul>
-            <li class="active"><a href="index.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 <main>
     <div class="container">
-        <div class="menu-item additional-items">
-            <div class="title-item clearfix">
-                <h2><img src="images/drink_icon.png" alt="Icon"> Drinks</h2>
-                <h2>Add soy, Rice or Almond Milk <img src="images/milk_icon.png" alt="Icon"></h2>
+        <!-- Menu Section -->
+        <section id="menu">
+            <div class="menu-item additional-items">
+                <div class="title-item clearfix">
+                    <h2><i class="fas fa-glass-martini"></i> Drinks</h2>
+                    <h2>Add soy, Rice or Almond Milk <i class="fas fa-wine-bottle"></i></h2>
+                </div>
+                <div class="item-inner clearfix">
+                    <ul>
+                        <li>Espresso $1.75</li>
+                        <li>Macchiato $2.00</li>
+                        <li>Cappucino $3.00</li>
+                        <li>Latte $3.00</li>
+                        <li>Regular Coffe $1.50</li>
+                    </ul>
+                    <ul>
+                        <li>+ $0.75</li>
+                    </ul>
+                </div>
             </div>
-            <div class="item-inner clearfix">
-                <ul>
-                    <li>Espresso $1.75</li>
-                    <li>Macchiato $2.00</li>
-                    <li>Cappucino $3.00</li>
-                    <li>Latte $3.00</li>
-                    <li>Regular Coffe $1.50</li>
-                </ul>
-                <ul>
-                    <li>+ $0.75</li>
-                </ul>
+            <div class="menu-item">
+                <div class="title-item">
+                    <h2><i class="fas fa-utensils"></i> Food</h2>
+                </div>
+                <div class="item-inner">
+                    <ul>
+                        <li>Bagel w/Cream Cheese $2.25</li>
+                        <li>Yogurt w/Granata $4.00</li>
+                        <li>Oat meal $3.00</li>
+                        <li>Tuna Sandwich $6.00</li>
+                        <li>Caesar Salad $8.00</li>
+                        <li>PB + J $2.50</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="menu-item">
-            <div class="title-item">
-                <h2><img src="images/food_Icon.png" alt="Icon"> Food</h2>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2><i class="fas fa-coffee"></i> About Us</h2>
+            <p>Welcome to ClydeBank Coffee Shop, your cozy neighborhood café where every cup tells a story. We're passionate about serving the finest coffee, carefully sourced from sustainable farms and roasted to perfection. Our warm atmosphere and friendly staff make this the perfect spot to work, meet friends, or simply enjoy a moment of peace with your favorite brew.</p>
+            <div class="features" style="display: flex; justify-content: space-around; margin-top: 20px; text-align: center;">
+                <div>
+                    <i class="fas fa-wifi fa-2x"></i>
+                    <p>Free WiFi</p>
+                </div>
+                <div>
+                    <i class="fas fa-leaf fa-2x"></i>
+                    <p>Organic</p>
+                </div>
+                <div>
+                    <i class="fas fa-recycle fa-2x"></i>
+                    <p>Eco-Friendly</p>
+                </div>
             </div>
-            <div class="item-inner">
-                <ul>
-                    <li>Bagel w/Cream Cheese $2.25</li>
-                    <li>Yogurt w/Granata $4.00</li>
-                    <li>Oat meal $3.00</li>
-                    <li>Tuna Sandwich $6.00</li>
-                    <li>Caesar Salad $8.00</li>
-                    <li>PB + J $2.50</li>
-                </ul>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events">
+            <div class="event-item">
+                <div class="event-title">
+                    <h2><i class="fas fa-palette"></i> Art Exhibition</h2>
+                </div>
+                <div class="event-sub-title">
+                    <p>June 5<sup>th</sup> - 21<sup>th</sup></p>
+                </div>
+                <p>Local artists showcase their work in our cozy space.</p>
             </div>
-        </div>
+            <div class="event-item">
+                <div class="event-title">
+                    <h2><i class="fas fa-dice"></i> Board Game Night</h2>
+                </div>
+                <div class="event-sub-title">
+                    <p>Every Thursday</p>
+                </div>
+                <p>Join us for a fun evening of board games and coffee.</p>
+            </div>
+            <div class="event-item">
+                <div class="event-title">
+                    <h2><i class="fas fa-guitar"></i> Acoustic Night</h2>
+                </div>
+                <div class="event-sub-title">
+                    <p>Friday Evenings</p>
+                </div>
+                <p>Live acoustic performances from local musicians.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <p>Contact form coming soon!</p>
+            </form>
+        </section>
     </div>
 </main>
 <footer>
