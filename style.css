@@ -1,0 +1,182 @@
+
+/* Modern Design Variables */
+:root {
+  --primary: #2C3639;
+  --secondary: #3F4E4F;
+  --accent: #A27B5C;
+  --light: #DCD7C9;
+  --white: #ffffff;
+  --shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--primary);
+  background: var(--light);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary);
+  padding: 20px 0;
+  box-shadow: var(--shadow);
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  background: var(--secondary);
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+/* Main Content */
+main {
+  padding: 40px 0;
+}
+
+section {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+}
+
+/* Menu Section */
+.menu-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--light);
+}
+
+.title-item h2 {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.item-inner ul {
+  padding: 10px 0;
+}
+
+.item-inner li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Events Section */
+.event-item {
+  background: var(--light);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+}
+
+.event-title h2 {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.event-sub-title {
+  color: var(--accent);
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+/* Contact Section */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: var(--light);
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+footer h2 {
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .title-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
